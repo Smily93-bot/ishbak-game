@@ -1,0 +1,19 @@
+{
+  "name": "Ishbak | اشبك",
+  "short_name": "Ishbak",
+  "description": "اشبك لعبة كلمات جماعية عربية وإنجليزية للعائلة والأصدقاء. اختاروا الفئة، أعطوا تلميحًا من كلمة واحدة، واكتشفوا الكلمة.",
+  "start_url": "./?source=pwa",
+  "id": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#D6EAF7",
+  "theme_color": "#D6EAF7",
+  "lang": "ar",
+  "dir": "rtl",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

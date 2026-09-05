@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>تحديث اشبك</title>
+    <style>
+      body { min-height: 100vh; margin: 0; display: grid; place-items: center; background: #edf8fc; color: #26355c; font-family: system-ui, sans-serif; text-align: center; }
+      main { padding: 28px; } h1 { margin-bottom: 8px; } p { color: #64748b; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>جارٍ تحديث اشبك…</h1>
+      <p>سيتم فتح النسخة الجديدة تلقائياً.</p>
+    </main>
+    <script>
+      (async function () {
+        if ('serviceWorker' in navigator) {
+          var registrations = await navigator.serviceWorker.getRegistrations();
+          await Promise.all(registrations.map(function (registration) { return registration.unregister(); }));
+        }
+        if ('caches' in window) {
+          var names = await caches.keys();
+          await Promise.all(names.map(function (name) { return caches.delete(name); }));
+        }
+        window.location.replace('./?release=1.9.1-rules-guide');
+      })();
+    </script>
+  </body>
+</html>

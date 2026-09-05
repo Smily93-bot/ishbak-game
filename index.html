@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>اشبك | لعبة كلمات جماعية عربية وإنجليزية</title>
+    <!-- The `react-native-web` recommended style reset: https://necolas.github.io/react-native-web/docs/setup/#root-element -->
+    <style id="expo-reset">
+      /* These styles make the body full-height */
+      html,
+      body {
+        height: 100%;
+      }
+      /* These styles disable body scrolling if you are using <ScrollView> */
+      body {
+        overflow: hidden;
+      }
+      /* These styles make the root element full-height */
+      #root {
+        display: flex;
+        height: 100%;
+        flex: 1;
+      }
+    </style>
+  
+    <base href="./" />
+    <meta id="ishbak-seo-description" name="description" content="اشبك لعبة كلمات جماعية عربية وإنجليزية للعائلة والأصدقاء. اختاروا فئة البطاقات، أعطوا تلميحًا من كلمة واحدة، واكتشفوا الكلمة." />
+    <meta name="keywords" content="اشبك, لعبة اشبك, لعبة كلمات, ألعاب جماعية, لعبة عربية, لعبة عائلية, Ishbak, word game, party game" />
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1" />
+    <link rel="canonical" href="https://www.ishbak-game.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ar_AR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:site_name" content="Ishbak | اشبك" />
+    <meta property="og:title" content="اشبك | لعبة كلمات جماعية عربية وإنجليزية" />
+    <meta property="og:description" content="فكّروا بنفس الطريقة واكتشفوا الكلمة بأقل عدد من التلميحات. العبوا مجانًا مع العائلة والأصدقاء." />
+    <meta property="og:url" content="https://www.ishbak-game.com/" />
+    <meta property="og:image" content="https://www.ishbak-game.com/icons/icon-512.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#D6EAF7" />
+    <link rel="icon" href="icons/icon-32.png" sizes="32x32" />
+    <link rel="icon" href="icons/icon-192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="icons/icon-180.png" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Ishbak" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Ishbak | اشبك","url":"https://www.ishbak-game.com/","applicationCategory":"GameApplication","operatingSystem":"Web, Android, iOS","inLanguage":["ar","en"],"description":"لعبة كلمات جماعية عربية وإنجليزية للعائلة والأصدقاء مع ثلاث طرق لعب وفئات متعددة.","image":"https://www.ishbak-game.com/icons/icon-512.png","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+  </head>
+
+  <body>
+    <script>
+      (function () {
+        function showIshbakError(message) {
+          if (document.getElementById("ishbak-runtime-error")) return;
+          var box = document.createElement("div");
+          box.id = "ishbak-runtime-error";
+          box.dir = "rtl";
+          box.style.cssText = "position:fixed;inset:20px;z-index:10000;margin:auto;max-width:520px;height:max-content;padding:22px;border-radius:18px;background:#fff4f1;color:#26355c;box-shadow:0 12px 40px rgba(38,53,92,.22);font:600 15px/1.7 system-ui,sans-serif;text-align:center";
+          box.innerHTML = "<strong style='display:block;font-size:19px;margin-bottom:8px'>حدث خطأ أثناء فتح اللعبة</strong><span>صوّر هذه الرسالة وأرسلها لي:</span><br><code style='display:block;margin-top:10px;direction:ltr;overflow-wrap:anywhere'>" + String(message || "Unknown error").replace(/[&<>]/g, function (character) { return ({"&":"&amp;","<":"&lt;",">":"&gt;"})[character]; }) + "</code>";
+          document.body.appendChild(box);
+        }
+        window.addEventListener("error", function (event) {
+          var message = event.error && event.error.message || event.message;
+          // Safari hides details for some third-party/cross-origin script errors.
+          // A generic "Script error." is not actionable and should not block the game.
+          if (!event.error && (!message || message === "Script error.")) return;
+          showIshbakError(message);
+        });
+        window.addEventListener("unhandledrejection", function (event) {
+          var reason = event.reason && event.reason.message || event.reason;
+          if (!reason || reason === "Script error.") return;
+          showIshbakError(reason);
+        });
+      })();
+    </script>
+
+    <!-- Use static rendering with Expo Router to support running without JavaScript. -->
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <!-- The root element for your Expo app. -->
+    <div id="root"></div>
+  <script src="_expo/static/js/web/index-0a104cae25fab1974352acb7de2599c7.js" defer></script>
+
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker.register("sw.js").catch(function () {});
+        });
+      }
+    </script>
+  
+    <script src="ad-config.js"></script>
+    <style>
+      #ishbak-direct-ad {
+        position: fixed;
+        right: max(10px, env(safe-area-inset-right));
+        bottom: max(10px, env(safe-area-inset-bottom));
+        width: min(180px, 44vw);
+        min-height: 54px;
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        padding: 8px;
+        border: 1px solid rgba(31, 57, 84, 0.16);
+        border-radius: 14px;
+        background: rgba(255, 255, 255, 0.96);
+        box-shadow: 0 8px 24px rgba(31, 57, 84, 0.18);
+        color: #49647d;
+        font: 700 11px/1.35 system-ui, sans-serif;
+        text-align: center;
+        text-decoration: none;
+        overflow: hidden;
+      }
+      #ishbak-direct-ad img { width: 100%; height: auto; border-radius: 9px; display: block; }
+      #ishbak-meta-links {
+        position: fixed;
+        left: max(8px, env(safe-area-inset-left));
+        bottom: max(6px, env(safe-area-inset-bottom));
+        z-index: 9998;
+        display: flex;
+        gap: 8px;
+      }
+      #ishbak-meta-links a {
+        color: #49647d;
+        font: 600 9px/1.2 system-ui, sans-serif;
+        text-decoration: underline;
+      }
+    </style>
+    <script>
+      (function () {
+        var config = window.ISHBAK_AD_CONFIG || {};
+        var metaLinks = document.createElement("nav");
+        metaLinks.id = "ishbak-meta-links";
+        var about = document.createElement("a");
+        about.href = "about.html";
+        about.textContent = "عن اشبك • About";
+        var privacy = document.createElement("a");
+        privacy.href = "privacy.html";
+        privacy.textContent = "الخصوصية • Privacy";
+        metaLinks.appendChild(about);
+        metaLinks.appendChild(privacy);
+        document.body.appendChild(metaLinks);
+
+        if (config.mode === "adsense-auto" && /^ca-pub-[0-9]+$/.test(config.adsenseClient || "")) {
+          var adsense = document.createElement("script");
+          adsense.async = true;
+          adsense.crossOrigin = "anonymous";
+          adsense.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=" + config.adsenseClient;
+          document.head.appendChild(adsense);
+          return;
+        }
+
+        var ad = document.createElement(config.directUrl ? "a" : "div");
+        ad.id = "ishbak-direct-ad";
+        ad.setAttribute("aria-label", "Advertisement");
+        if (config.directUrl) {
+          ad.href = config.directUrl;
+          ad.target = "_blank";
+          ad.rel = "sponsored noopener";
+        }
+        if (config.directImage) {
+          var image = document.createElement("img");
+          image.src = config.directImage;
+          image.alt = config.directLabel || "Advertisement";
+          ad.appendChild(image);
+        } else {
+          ad.textContent = config.directLabel || "مساحة إعلانية • Advertisement";
+        }
+        document.body.appendChild(ad);
+      })();
+    </script>
+  </body>
+</html>
